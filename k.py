@@ -18,7 +18,7 @@ choice=input()
 
 if choice == '1' :
      # To connect os level application we use subprocess
-     # subprocess.getoutput('vlc')
+     subprocess.getoutput('vlc')
 
 elif choice == '2' :
      # To play favourite song in youtube
@@ -42,7 +42,7 @@ elif choice == '5' :
 elif choice == '6' :
      # To reboot
      a="shutdown -h now" 
-     process=subprocess.Popen(a.split(),stdout=subprocess.PIP)
+     process=subprocess.Popen(a.split(),stdout=subprocess.PIPE)
  
 else :
      print("helloo")
